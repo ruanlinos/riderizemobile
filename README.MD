@@ -30,7 +30,7 @@ To run this applications, you need Git, Yarn, and Node!
 Next step you must clone this repository:
 
 ```bash
-    $ git clone https://github.com/ruanlinos/riderizebackend.git
+    $ git clone https://github.com/ruanlinos/riderizemobile
 ```
 
 Inside the foder project, just run:
