@@ -22,14 +22,14 @@ const CREATE_USER = gql`
 `;
 
 const Signup: React.FC = () => {
-  const [login, { data: _data }] = useMutation(CREATE_USER);
+  const [createNewUser, { data: _data }] = useMutation(CREATE_USER);
   const navigation = useNavigation();
 
   const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = async (loginData: any, { reset }: any) => {
     try {
-      await login({
+      await createNewUser({
         variables: {
           input: loginData,
         },
